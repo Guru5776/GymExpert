@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6887895D0BE1645A2C011A00 /* Pods_GymExpertTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC0E4660749CB60FB92B8D3 /* Pods_GymExpertTests.framework */; };
+		841D7F7F21E5044800C4577E /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D7F7E21E5044800C4577E /* WorkoutTableViewController.swift */; };
+		841D7F8121E50ABA00C4577E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D7F8021E50ABA00C4577E /* UIColor.swift */; };
+		842C81C121F765B700C071A9 /* GymExpert.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 842C81BE21F765B600C071A9 /* GymExpert.sqlite */; };
+		842C81C221F765B700C071A9 /* GymExpert.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = 842C81BF21F765B600C071A9 /* GymExpert.sqlite-wal */; };
+		842C81C321F765B700C071A9 /* GymExpert.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = 842C81C021F765B600C071A9 /* GymExpert.sqlite-shm */; };
+		84528DC6217784A800D1E8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84528DC5217784A800D1E8EA /* AppDelegate.swift */; };
+		84528DCB217784A800D1E8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84528DC9217784A800D1E8EA /* Main.storyboard */; };
+		84528DCE217784A800D1E8EA /* GymExpert.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84528DCC217784A800D1E8EA /* GymExpert.xcdatamodeld */; };
+		84528DD3217784AB00D1E8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84528DD1217784AB00D1E8EA /* LaunchScreen.storyboard */; };
+		84528DDE217784AB00D1E8EA /* GymExpertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84528DDD217784AB00D1E8EA /* GymExpertTests.swift */; };
+		84528DE9217784AB00D1E8EA /* GymExpertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84528DE8217784AB00D1E8EA /* GymExpertUITests.swift */; };
+		84528DF72177853300D1E8EA /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84528DF62177853300D1E8EA /* ExerciseTableViewController.swift */; };
+		84528E04217A4EDE00D1E8EA /* NewExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84528E03217A4EDE00D1E8EA /* NewExerciseTableViewController.swift */; };
+		84640C2221E77A64004045ED /* dataExercise.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84640C2121E77A64004045ED /* dataExercise.plist */; };
+		84A0324221E906AE004451F6 /* CreateWorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0324121E906AE004451F6 /* CreateWorkoutController.swift */; };
+		84A0324421EA84BD004451F6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0324321EA84BD004451F6 /* CoreDataManager.swift */; };
+		84A0324621EBD0E4004451F6 /* CreateSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0324521EBD0E4004451F6 /* CreateSampleController.swift */; };
+		84A0329621EE8683004451F6 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328021EE8683004451F6 /* IQTextView.swift */; };
+		84A0329721EE8683004451F6 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328221EE8683004451F6 /* IQPreviousNextView.swift */; };
+		84A0329821EE8683004451F6 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328321EE8683004451F6 /* IQTitleBarButtonItem.swift */; };
+		84A0329921EE8683004451F6 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328421EE8683004451F6 /* IQBarButtonItem.swift */; };
+		84A0329A21EE8683004451F6 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328521EE8683004451F6 /* IQToolbar.swift */; };
+		84A0329B21EE8683004451F6 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328621EE8683004451F6 /* IQUIView+IQKeyboardToolbar.swift */; };
+		84A0329C21EE8683004451F6 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328721EE8683004451F6 /* IQInvocation.swift */; };
+		84A0329D21EE8683004451F6 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328921EE8683004451F6 /* IQKeyboardManagerConstantsInternal.swift */; };
+		84A0329E21EE8683004451F6 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328A21EE8683004451F6 /* IQKeyboardManagerConstants.swift */; };
+		84A0329F21EE8683004451F6 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84A0328C21EE8683004451F6 /* IQKeyboardManager.bundle */; };
+		84A032A021EE8683004451F6 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328D21EE8683004451F6 /* IQKeyboardReturnKeyHandler.swift */; };
+		84A032A121EE8683004451F6 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0328E21EE8683004451F6 /* IQKeyboardManager.swift */; };
+		84A032A221EE8683004451F6 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0329121EE8683004451F6 /* IQUIScrollView+Additions.swift */; };
+		84A032A321EE8683004451F6 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0329221EE8683004451F6 /* IQUIViewController+Additions.swift */; };
+		84A032A421EE8683004451F6 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0329321EE8683004451F6 /* IQUITextFieldView+Additions.swift */; };
+		84A032A521EE8683004451F6 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0329421EE8683004451F6 /* IQUIView+Hierarchy.swift */; };
+		84A032A621EE8683004451F6 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0329521EE8683004451F6 /* IQNSArray+Sort.swift */; };
+		84A032A821EFCE4E004451F6 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A032A721EFCE4E004451F6 /* WorkoutCell.swift */; };
+		84A032AC21EFE11A004451F6 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A032AB21EFE11A004451F6 /* ExerciseCell.swift */; };
+		84A032AE21F1280D004451F6 /* EmployeesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A032AD21F1280D004451F6 /* EmployeesController.swift */; };
+		84A032B221F13C1B004451F6 /* UIViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A032B121F13C1B004451F6 /* UIViewController+Helpers.swift */; };
+		84A032B421F13E5E004451F6 /* CreateEmployeeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A032B321F13E5E004451F6 /* CreateEmployeeController.swift */; };
+		84A032B621F22BFE004451F6 /* ExerciseDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A032B521F22BFE004451F6 /* ExerciseDetailController.swift */; };
+		84B4606621F8EC45006D090A /* SwiftyGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4606521F8EC45006D090A /* SwiftyGif.framework */; };
+		84DB9A4421E3E85B002DB19C /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB9A4321E3E85B002DB19C /* MyTabBarController.swift */; };
+		84DDEDC521CAA4AD007B5DBB /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDEDC421CAA4AD007B5DBB /* SampleTableViewController.swift */; };
+		84EFF0582204D6BE00C65985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EFF0572204D6BD00C65985 /* Assets.xcassets */; };
+		84EFF05C2205F0C600C65985 /* UIColor + theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EFF05B2205F0C500C65985 /* UIColor + theme.swift */; };
+		84EFF06022076CA600C65985 /* EmployeeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EFF05F22076CA600C65985 /* EmployeeType.swift */; };
+		AAD8AB9291CE9AB2770D41C3 /* Pods_GymExpertUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B9E576783DCAAAF1E903098 /* Pods_GymExpertUITests.framework */; };
+		D08D9DEC5916A6C46BEDF2D8 /* Pods_GymExpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1F9450BB60D5779A82667B /* Pods_GymExpert.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84528DDA217784AB00D1E8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84528DBA217784A800D1E8EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84528DC1217784A800D1E8EA;
+			remoteInfo = GymExpert;
+		};
+		84528DE5217784AB00D1E8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84528DBA217784A800D1E8EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84528DC1217784A800D1E8EA;
+			remoteInfo = GymExpert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3EB59A50C5CC2B15327FE6BD /* Pods-GymExpertUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymExpertUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymExpertUITests/Pods-GymExpertUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B1F9450BB60D5779A82667B /* Pods_GymExpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymExpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		738467B342EA124E1777E4EC /* Pods-GymExpertTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymExpertTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymExpertTests/Pods-GymExpertTests.release.xcconfig"; sourceTree = "<group>"; };
+		79630BC1D8E0F7C23ACCE74C /* Pods-GymExpert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymExpert.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymExpert/Pods-GymExpert.release.xcconfig"; sourceTree = "<group>"; };
+		7B9E576783DCAAAF1E903098 /* Pods_GymExpertUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymExpertUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		836C49991CA56AA787637722 /* Pods-GymExpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymExpert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymExpert/Pods-GymExpert.debug.xcconfig"; sourceTree = "<group>"; };
+		841D7F7E21E5044800C4577E /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
+		841D7F8021E50ABA00C4577E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		842C81BE21F765B600C071A9 /* GymExpert.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GymExpert.sqlite; sourceTree = "<group>"; };
+		842C81BF21F765B600C071A9 /* GymExpert.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GymExpert.sqlite-wal"; sourceTree = "<group>"; };
+		842C81C021F765B600C071A9 /* GymExpert.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GymExpert.sqlite-shm"; sourceTree = "<group>"; };
+		84528DC2217784A800D1E8EA /* GymExpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymExpert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84528DC5217784A800D1E8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84528DCA217784A800D1E8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84528DCD217784A800D1E8EA /* GymExpert.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymExpert.xcdatamodel; sourceTree = "<group>"; };
+		84528DD2217784AB00D1E8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84528DD4217784AB00D1E8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84528DD9217784AB00D1E8EA /* GymExpertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymExpertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84528DDD217784AB00D1E8EA /* GymExpertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymExpertTests.swift; sourceTree = "<group>"; };
+		84528DDF217784AB00D1E8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84528DE4217784AB00D1E8EA /* GymExpertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymExpertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84528DE8217784AB00D1E8EA /* GymExpertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymExpertUITests.swift; sourceTree = "<group>"; };
+		84528DEA217784AB00D1E8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84528DF62177853300D1E8EA /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
+		84528E03217A4EDE00D1E8EA /* NewExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExerciseTableViewController.swift; sourceTree = "<group>"; };
+		84640C2121E77A64004045ED /* dataExercise.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = dataExercise.plist; sourceTree = "<group>"; };
+		84A0324121E906AE004451F6 /* CreateWorkoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkoutController.swift; sourceTree = "<group>"; };
+		84A0324321EA84BD004451F6 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		84A0324521EBD0E4004451F6 /* CreateSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSampleController.swift; sourceTree = "<group>"; };
+		84A0328021EE8683004451F6 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		84A0328221EE8683004451F6 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		84A0328321EE8683004451F6 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		84A0328421EE8683004451F6 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		84A0328521EE8683004451F6 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		84A0328621EE8683004451F6 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		84A0328721EE8683004451F6 /* IQInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		84A0328921EE8683004451F6 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		84A0328A21EE8683004451F6 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		84A0328C21EE8683004451F6 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		84A0328D21EE8683004451F6 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		84A0328E21EE8683004451F6 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		84A0328F21EE8683004451F6 /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		84A0329121EE8683004451F6 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		84A0329221EE8683004451F6 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		84A0329321EE8683004451F6 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		84A0329421EE8683004451F6 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		84A0329521EE8683004451F6 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		84A032A721EFCE4E004451F6 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
+		84A032AB21EFE11A004451F6 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		84A032AD21F1280D004451F6 /* EmployeesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesController.swift; sourceTree = "<group>"; };
+		84A032B121F13C1B004451F6 /* UIViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helpers.swift"; sourceTree = "<group>"; };
+		84A032B321F13E5E004451F6 /* CreateEmployeeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeController.swift; sourceTree = "<group>"; };
+		84A032B521F22BFE004451F6 /* ExerciseDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailController.swift; sourceTree = "<group>"; };
+		84B4606521F8EC45006D090A /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B836B621F3E51800074976 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DB9A4321E3E85B002DB19C /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		84DDEDC421CAA4AD007B5DBB /* SampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
+		84EFF0572204D6BD00C65985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84EFF05B2205F0C500C65985 /* UIColor + theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + theme.swift"; sourceTree = "<group>"; };
+		84EFF05F22076CA600C65985 /* EmployeeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeType.swift; sourceTree = "<group>"; };
+		CDC0E4660749CB60FB92B8D3 /* Pods_GymExpertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymExpertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D076A30FCDA5CE376C276103 /* Pods-GymExpertTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymExpertTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymExpertTests/Pods-GymExpertTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC14A6CD9C6001A2B87D3280 /* Pods-GymExpertUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymExpertUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymExpertUITests/Pods-GymExpertUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84528DBF217784A800D1E8EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B4606621F8EC45006D090A /* SwiftyGif.framework in Frameworks */,
+				D08D9DEC5916A6C46BEDF2D8 /* Pods_GymExpert.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84528DD6217784AB00D1E8EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6887895D0BE1645A2C011A00 /* Pods_GymExpertTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84528DE1217784AB00D1E8EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD8AB9291CE9AB2770D41C3 /* Pods_GymExpertUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84528DB9217784A800D1E8EA = {
+			isa = PBXGroup;
+			children = (
+				842C81BE21F765B600C071A9 /* GymExpert.sqlite */,
+				842C81C021F765B600C071A9 /* GymExpert.sqlite-shm */,
+				842C81BF21F765B600C071A9 /* GymExpert.sqlite-wal */,
+				84528DC4217784A800D1E8EA /* GymExpert */,
+				84528DDC217784AB00D1E8EA /* GymExpertTests */,
+				84528DE7217784AB00D1E8EA /* GymExpertUITests */,
+				84528DC3217784A800D1E8EA /* Products */,
+				9443EE0669956FA02781B92B /* Frameworks */,
+				FCC2AAD7172ABFB4F761CF6E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		84528DC3217784A800D1E8EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84528DC2217784A800D1E8EA /* GymExpert.app */,
+				84528DD9217784AB00D1E8EA /* GymExpertTests.xctest */,
+				84528DE4217784AB00D1E8EA /* GymExpertUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84528DC4217784A800D1E8EA /* GymExpert */ = {
+			isa = PBXGroup;
+			children = (
+				84A032B021F13BF7004451F6 /* Helpers */,
+				84A032AF21F13B67004451F6 /* Samples */,
+				84A032AA21EFE0CE004451F6 /* Exercises */,
+				84A032A921EFD13D004451F6 /* Workouts */,
+				84A0327E21EE8683004451F6 /* IQKeyboardManagerSwift */,
+				84528DC5217784A800D1E8EA /* AppDelegate.swift */,
+				84DB9A4321E3E85B002DB19C /* MyTabBarController.swift */,
+				841D7F8021E50ABA00C4577E /* UIColor.swift */,
+				84A0324321EA84BD004451F6 /* CoreDataManager.swift */,
+				84528DC9217784A800D1E8EA /* Main.storyboard */,
+				84EFF0572204D6BD00C65985 /* Assets.xcassets */,
+				84528DD1217784AB00D1E8EA /* LaunchScreen.storyboard */,
+				84528DD4217784AB00D1E8EA /* Info.plist */,
+				84528DCC217784A800D1E8EA /* GymExpert.xcdatamodeld */,
+				84640C2121E77A64004045ED /* dataExercise.plist */,
+			);
+			path = GymExpert;
+			sourceTree = "<group>";
+		};
+		84528DDC217784AB00D1E8EA /* GymExpertTests */ = {
+			isa = PBXGroup;
+			children = (
+				84528DDD217784AB00D1E8EA /* GymExpertTests.swift */,
+				84528DDF217784AB00D1E8EA /* Info.plist */,
+			);
+			path = GymExpertTests;
+			sourceTree = "<group>";
+		};
+		84528DE7217784AB00D1E8EA /* GymExpertUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84528DE8217784AB00D1E8EA /* GymExpertUITests.swift */,
+				84528DEA217784AB00D1E8EA /* Info.plist */,
+			);
+			path = GymExpertUITests;
+			sourceTree = "<group>";
+		};
+		84A0327E21EE8683004451F6 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				84A0327F21EE8683004451F6 /* IQTextView */,
+				84A0328121EE8683004451F6 /* IQToolbar */,
+				84A0328821EE8683004451F6 /* Constants */,
+				84A0328B21EE8683004451F6 /* Resources */,
+				84A0328D21EE8683004451F6 /* IQKeyboardReturnKeyHandler.swift */,
+				84A0328E21EE8683004451F6 /* IQKeyboardManager.swift */,
+				84A0328F21EE8683004451F6 /* IQKeyboardManagerSwift.h */,
+				84A0329021EE8683004451F6 /* Categories */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		84A0327F21EE8683004451F6 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				84A0328021EE8683004451F6 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		84A0328121EE8683004451F6 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				84A0328221EE8683004451F6 /* IQPreviousNextView.swift */,
+				84A0328321EE8683004451F6 /* IQTitleBarButtonItem.swift */,
+				84A0328421EE8683004451F6 /* IQBarButtonItem.swift */,
+				84A0328521EE8683004451F6 /* IQToolbar.swift */,
+				84A0328621EE8683004451F6 /* IQUIView+IQKeyboardToolbar.swift */,
+				84A0328721EE8683004451F6 /* IQInvocation.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		84A0328821EE8683004451F6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84A0328921EE8683004451F6 /* IQKeyboardManagerConstantsInternal.swift */,
+				84A0328A21EE8683004451F6 /* IQKeyboardManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		84A0328B21EE8683004451F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84A0328C21EE8683004451F6 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84A0329021EE8683004451F6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				84EFF05B2205F0C500C65985 /* UIColor + theme.swift */,
+				84A0329121EE8683004451F6 /* IQUIScrollView+Additions.swift */,
+				84A0329221EE8683004451F6 /* IQUIViewController+Additions.swift */,
+				84A0329321EE8683004451F6 /* IQUITextFieldView+Additions.swift */,
+				84A0329421EE8683004451F6 /* IQUIView+Hierarchy.swift */,
+				84A0329521EE8683004451F6 /* IQNSArray+Sort.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		84A032A921EFD13D004451F6 /* Workouts */ = {
+			isa = PBXGroup;
+			children = (
+				841D7F7E21E5044800C4577E /* WorkoutTableViewController.swift */,
+				84A0324121E906AE004451F6 /* CreateWorkoutController.swift */,
+				84A032A721EFCE4E004451F6 /* WorkoutCell.swift */,
+				84A032AD21F1280D004451F6 /* EmployeesController.swift */,
+				84EFF05F22076CA600C65985 /* EmployeeType.swift */,
+				84A032B321F13E5E004451F6 /* CreateEmployeeController.swift */,
+			);
+			path = Workouts;
+			sourceTree = "<group>";
+		};
+		84A032AA21EFE0CE004451F6 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				84528DF62177853300D1E8EA /* ExerciseTableViewController.swift */,
+				84A032B521F22BFE004451F6 /* ExerciseDetailController.swift */,
+				84A032AB21EFE11A004451F6 /* ExerciseCell.swift */,
+				84528E03217A4EDE00D1E8EA /* NewExerciseTableViewController.swift */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		84A032AF21F13B67004451F6 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				84DDEDC421CAA4AD007B5DBB /* SampleTableViewController.swift */,
+				84A0324521EBD0E4004451F6 /* CreateSampleController.swift */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		84A032B021F13BF7004451F6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				84A032B121F13C1B004451F6 /* UIViewController+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9443EE0669956FA02781B92B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84B4606521F8EC45006D090A /* SwiftyGif.framework */,
+				84B836B621F3E51800074976 /* DropDown.framework */,
+				6B1F9450BB60D5779A82667B /* Pods_GymExpert.framework */,
+				CDC0E4660749CB60FB92B8D3 /* Pods_GymExpertTests.framework */,
+				7B9E576783DCAAAF1E903098 /* Pods_GymExpertUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCC2AAD7172ABFB4F761CF6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				836C49991CA56AA787637722 /* Pods-GymExpert.debug.xcconfig */,
+				79630BC1D8E0F7C23ACCE74C /* Pods-GymExpert.release.xcconfig */,
+				D076A30FCDA5CE376C276103 /* Pods-GymExpertTests.debug.xcconfig */,
+				738467B342EA124E1777E4EC /* Pods-GymExpertTests.release.xcconfig */,
+				3EB59A50C5CC2B15327FE6BD /* Pods-GymExpertUITests.debug.xcconfig */,
+				EC14A6CD9C6001A2B87D3280 /* Pods-GymExpertUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84528DC1217784A800D1E8EA /* GymExpert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84528DED217784AB00D1E8EA /* Build configuration list for PBXNativeTarget "GymExpert" */;
+			buildPhases = (
+				5523965F54393194F2207235 /* [CP] Check Pods Manifest.lock */,
+				84528DBE217784A800D1E8EA /* Sources */,
+				84528DBF217784A800D1E8EA /* Frameworks */,
+				84528DC0217784A800D1E8EA /* Resources */,
+				7D5089D190C6B24A752C5293 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymExpert;
+			productName = GymExpert;
+			productReference = 84528DC2217784A800D1E8EA /* GymExpert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84528DD8217784AB00D1E8EA /* GymExpertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84528DF0217784AB00D1E8EA /* Build configuration list for PBXNativeTarget "GymExpertTests" */;
+			buildPhases = (
+				2E92F6516EC2C847ACF1B07A /* [CP] Check Pods Manifest.lock */,
+				84528DD5217784AB00D1E8EA /* Sources */,
+				84528DD6217784AB00D1E8EA /* Frameworks */,
+				84528DD7217784AB00D1E8EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84528DDB217784AB00D1E8EA /* PBXTargetDependency */,
+			);
+			name = GymExpertTests;
+			productName = GymExpertTests;
+			productReference = 84528DD9217784AB00D1E8EA /* GymExpertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84528DE3217784AB00D1E8EA /* GymExpertUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84528DF3217784AB00D1E8EA /* Build configuration list for PBXNativeTarget "GymExpertUITests" */;
+			buildPhases = (
+				BECA8255519476D793E7F120 /* [CP] Check Pods Manifest.lock */,
+				84528DE0217784AB00D1E8EA /* Sources */,
+				84528DE1217784AB00D1E8EA /* Frameworks */,
+				84528DE2217784AB00D1E8EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84528DE6217784AB00D1E8EA /* PBXTargetDependency */,
+			);
+			name = GymExpertUITests;
+			productName = GymExpertUITests;
+			productReference = 84528DE4217784AB00D1E8EA /* GymExpertUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84528DBA217784A800D1E8EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Nikita Tkachenko";
+				TargetAttributes = {
+					84528DC1217784A800D1E8EA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					84528DD8217784AB00D1E8EA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 84528DC1217784A800D1E8EA;
+					};
+					84528DE3217784AB00D1E8EA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 84528DC1217784A800D1E8EA;
+					};
+				};
+			};
+			buildConfigurationList = 84528DBD217784A800D1E8EA /* Build configuration list for PBXProject "GymExpert" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84528DB9217784A800D1E8EA;
+			productRefGroup = 84528DC3217784A800D1E8EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84528DC1217784A800D1E8EA /* GymExpert */,
+				84528DD8217784AB00D1E8EA /* GymExpertTests */,
+				84528DE3217784AB00D1E8EA /* GymExpertUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84528DC0217784A800D1E8EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A0329F21EE8683004451F6 /* IQKeyboardManager.bundle in Resources */,
+				842C81C121F765B700C071A9 /* GymExpert.sqlite in Resources */,
+				84528DD3217784AB00D1E8EA /* LaunchScreen.storyboard in Resources */,
+				842C81C221F765B700C071A9 /* GymExpert.sqlite-wal in Resources */,
+				84640C2221E77A64004045ED /* dataExercise.plist in Resources */,
+				842C81C321F765B700C071A9 /* GymExpert.sqlite-shm in Resources */,
+				84EFF0582204D6BE00C65985 /* Assets.xcassets in Resources */,
+				84528DCB217784A800D1E8EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84528DD7217784AB00D1E8EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84528DE2217784AB00D1E8EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E92F6516EC2C847ACF1B07A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GymExpertTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5523965F54393194F2207235 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GymExpert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D5089D190C6B24A752C5293 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GymExpert/Pods-GymExpert-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEImage/AEImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GIFImageView/GIFImageView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GIFImageView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymExpert/Pods-GymExpert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BECA8255519476D793E7F120 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GymExpertUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84528DBE217784A800D1E8EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84528E04217A4EDE00D1E8EA /* NewExerciseTableViewController.swift in Sources */,
+				84A032A821EFCE4E004451F6 /* WorkoutCell.swift in Sources */,
+				84A0329E21EE8683004451F6 /* IQKeyboardManagerConstants.swift in Sources */,
+				84EFF05C2205F0C600C65985 /* UIColor + theme.swift in Sources */,
+				84A032A021EE8683004451F6 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				84A032A621EE8683004451F6 /* IQNSArray+Sort.swift in Sources */,
+				84A0329921EE8683004451F6 /* IQBarButtonItem.swift in Sources */,
+				84528DCE217784A800D1E8EA /* GymExpert.xcdatamodeld in Sources */,
+				84A032A421EE8683004451F6 /* IQUITextFieldView+Additions.swift in Sources */,
+				84A032B621F22BFE004451F6 /* ExerciseDetailController.swift in Sources */,
+				84A0329B21EE8683004451F6 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				84A0324221E906AE004451F6 /* CreateWorkoutController.swift in Sources */,
+				84A0329821EE8683004451F6 /* IQTitleBarButtonItem.swift in Sources */,
+				84A0329A21EE8683004451F6 /* IQToolbar.swift in Sources */,
+				84EFF06022076CA600C65985 /* EmployeeType.swift in Sources */,
+				84DDEDC521CAA4AD007B5DBB /* SampleTableViewController.swift in Sources */,
+				84A0329D21EE8683004451F6 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				84A0324421EA84BD004451F6 /* CoreDataManager.swift in Sources */,
+				841D7F8121E50ABA00C4577E /* UIColor.swift in Sources */,
+				84DB9A4421E3E85B002DB19C /* MyTabBarController.swift in Sources */,
+				84A032B421F13E5E004451F6 /* CreateEmployeeController.swift in Sources */,
+				841D7F7F21E5044800C4577E /* WorkoutTableViewController.swift in Sources */,
+				84528DC6217784A800D1E8EA /* AppDelegate.swift in Sources */,
+				84A032A521EE8683004451F6 /* IQUIView+Hierarchy.swift in Sources */,
+				84A032A321EE8683004451F6 /* IQUIViewController+Additions.swift in Sources */,
+				84A032B221F13C1B004451F6 /* UIViewController+Helpers.swift in Sources */,
+				84A032A121EE8683004451F6 /* IQKeyboardManager.swift in Sources */,
+				84A032A221EE8683004451F6 /* IQUIScrollView+Additions.swift in Sources */,
+				84A0329C21EE8683004451F6 /* IQInvocation.swift in Sources */,
+				84A0324621EBD0E4004451F6 /* CreateSampleController.swift in Sources */,
+				84A0329721EE8683004451F6 /* IQPreviousNextView.swift in Sources */,
+				84A032AE21F1280D004451F6 /* EmployeesController.swift in Sources */,
+				84A0329621EE8683004451F6 /* IQTextView.swift in Sources */,
+				84A032AC21EFE11A004451F6 /* ExerciseCell.swift in Sources */,
+				84528DF72177853300D1E8EA /* ExerciseTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84528DD5217784AB00D1E8EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84528DDE217784AB00D1E8EA /* GymExpertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84528DE0217784AB00D1E8EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84528DE9217784AB00D1E8EA /* GymExpertUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84528DDB217784AB00D1E8EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84528DC1217784A800D1E8EA /* GymExpert */;
+			targetProxy = 84528DDA217784AB00D1E8EA /* PBXContainerItemProxy */;
+		};
+		84528DE6217784AB00D1E8EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84528DC1217784A800D1E8EA /* GymExpert */;
+			targetProxy = 84528DE5217784AB00D1E8EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84528DC9217784A800D1E8EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84528DCA217784A800D1E8EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84528DD1217784AB00D1E8EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84528DD2217784AB00D1E8EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84528DEB217784AB00D1E8EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84528DEC217784AB00D1E8EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84528DEE217784AB00D1E8EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836C49991CA56AA787637722 /* Pods-GymExpert.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55CTS73M2Q;
+				INFOPLIST_FILE = GymExpert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitatkachenko.GymExpert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84528DEF217784AB00D1E8EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79630BC1D8E0F7C23ACCE74C /* Pods-GymExpert.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55CTS73M2Q;
+				INFOPLIST_FILE = GymExpert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitatkachenko.GymExpert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84528DF1217784AB00D1E8EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D076A30FCDA5CE376C276103 /* Pods-GymExpertTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55CTS73M2Q;
+				INFOPLIST_FILE = GymExpertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitatkachenko.GymExpertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymExpert.app/GymExpert";
+			};
+			name = Debug;
+		};
+		84528DF2217784AB00D1E8EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738467B342EA124E1777E4EC /* Pods-GymExpertTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55CTS73M2Q;
+				INFOPLIST_FILE = GymExpertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitatkachenko.GymExpertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymExpert.app/GymExpert";
+			};
+			name = Release;
+		};
+		84528DF4217784AB00D1E8EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB59A50C5CC2B15327FE6BD /* Pods-GymExpertUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55CTS73M2Q;
+				INFOPLIST_FILE = GymExpertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitatkachenko.GymExpertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GymExpert;
+			};
+			name = Debug;
+		};
+		84528DF5217784AB00D1E8EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC14A6CD9C6001A2B87D3280 /* Pods-GymExpertUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55CTS73M2Q;
+				INFOPLIST_FILE = GymExpertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitatkachenko.GymExpertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GymExpert;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84528DBD217784A800D1E8EA /* Build configuration list for PBXProject "GymExpert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84528DEB217784AB00D1E8EA /* Debug */,
+				84528DEC217784AB00D1E8EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84528DED217784AB00D1E8EA /* Build configuration list for PBXNativeTarget "GymExpert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84528DEE217784AB00D1E8EA /* Debug */,
+				84528DEF217784AB00D1E8EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84528DF0217784AB00D1E8EA /* Build configuration list for PBXNativeTarget "GymExpertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84528DF1217784AB00D1E8EA /* Debug */,
+				84528DF2217784AB00D1E8EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84528DF3217784AB00D1E8EA /* Build configuration list for PBXNativeTarget "GymExpertUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84528DF4217784AB00D1E8EA /* Debug */,
+				84528DF5217784AB00D1E8EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84528DCC217784A800D1E8EA /* GymExpert.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84528DCD217784A800D1E8EA /* GymExpert.xcdatamodel */,
+			);
+			currentVersion = 84528DCD217784A800D1E8EA /* GymExpert.xcdatamodel */;
+			path = GymExpert.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84528DBA217784A800D1E8EA /* Project object */;
+}

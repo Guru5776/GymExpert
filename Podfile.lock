@@ -1,0 +1,28 @@
+PODS:
+  - AEImage (3.0.0)
+  - GIFImageView (0.1.0)
+  - SwiftGifOrigin (1.7.0)
+  - SwiftyGif (4.2.0)
+
+DEPENDENCIES:
+  - AEImage
+  - GIFImageView
+  - SwiftGifOrigin (~> 1.7.0)
+  - SwiftyGif (~> 4.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AEImage
+    - GIFImageView
+    - SwiftGifOrigin
+    - SwiftyGif
+
+SPEC CHECKSUMS:
+  AEImage: 3b3b6571b165816f6bf38662c134fde9ae8529a8
+  GIFImageView: cd6a500b9bac1942cb66b73452b97baa6e75280d
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  SwiftyGif: a149bf84df23370592f3f075561ae02c8632a314
+
+PODFILE CHECKSUM: 6bf7cb84d94b364666474da988f3a99523bc87d4
+
+COCOAPODS: 1.5.3

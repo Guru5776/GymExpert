@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="на заставку" translatesAutoresizingMaskIntoConstraints="NO" id="4iI-eH-1Om">
+                                <rect key="frame" x="0.0" y="48" width="375" height="483"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPERT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H9-nd-iSu">
+                                <rect key="frame" x="148" y="539" width="201" height="62"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="50"/>
+                                <color key="textColor" red="0.78431372549019607" green="0.47540550539999998" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GYM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOZ-Wb-4lE">
+                                <rect key="frame" x="37" y="539" width="114" height="62"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="50"/>
+                                <color key="textColor" red="0.18823529410000001" green="0.64313725489999995" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.18823529410000001" green="0.64313725489999995" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.90588235294117647" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NOZ-Wb-4lE" firstAttribute="top" secondItem="4iI-eH-1Om" secondAttribute="bottom" constant="8" id="IWV-OE-TMq"/>
+                            <constraint firstItem="2H9-nd-iSu" firstAttribute="top" secondItem="4iI-eH-1Om" secondAttribute="bottom" constant="8" id="KQF-J4-ODT"/>
+                            <constraint firstItem="4iI-eH-1Om" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="WtX-N4-H9q"/>
+                            <constraint firstItem="4iI-eH-1Om" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ww6-lg-JQT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2H9-nd-iSu" secondAttribute="trailing" constant="26" id="Zfv-zw-PKt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NOZ-Wb-4lE" secondAttribute="trailing" constant="224" id="dPV-iE-GJH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4iI-eH-1Om" secondAttribute="trailing" id="jKR-kC-Mp4"/>
+                            <constraint firstItem="2H9-nd-iSu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="jgf-xH-nkY"/>
+                            <constraint firstItem="4iI-eH-1Om" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="qRn-Cg-756"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4iI-eH-1Om" secondAttribute="bottom" constant="136" id="sP7-GZ-Igm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NOZ-Wb-4lE" secondAttribute="bottom" constant="66" id="tzi-Fd-tkW"/>
+                            <constraint firstItem="NOZ-Wb-4lE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="ucj-1Y-aVX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2H9-nd-iSu" secondAttribute="bottom" constant="66" id="vxy-Lk-Pdy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="на заставку" width="263.435302734375" height="338.82351684570312"/>
+    </resources>
+</document>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>descriptLabel</key>
+		<string>Ложитесь на пол и согните ноги под углом 90 градусов. Следите за тем, чтобы ваша поясница оставалась плотно прижатой к полу во время выполнения каждого повтора.
+Скрестите руки на груди или заложите их за голову, не переплетая пальцы между собой.
+Медленно, за счёт напряжения мышц живота оторвите плечи от пола на несколько сантиметров.
+Плавно опуститесь в исходное положение и повторите упражнение.</string>
+		<key>groupLabel</key>
+		<string>Ноги</string>
+		<key>levelLabel</key>
+		<string>Начинающий</string>
+		<key>name</key>
+		<string>Скручивания</string>
+		<key>image</key>
+		<string>body.png</string>
+	</dict>
+	<dict>
+		<key>descriptLabel</key>
+		<string>Руки</string>
+		<key>groupLabel</key>
+		<string>Руки</string>
+		<key>levelLabel</key>
+		<string>Начинающий</string>
+		<key>name</key>
+		<string>Руки</string>
+		<key>image</key>
+		<string>body.png</string>
+	</dict>
+</array>
+</plist>

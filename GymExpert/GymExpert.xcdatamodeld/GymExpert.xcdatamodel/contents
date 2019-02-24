@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Employee" representedClassName="Employee" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repeatLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sideLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="employees" inverseEntity="Workout" syncable="YES"/>
+    </entity>
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="levelLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Sample" representedClassName="Sample" syncable="YES" codeGenerationType="class">
+        <attribute name="bedraSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bedroSlevaSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bedroSpravaSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bicepsSlevaSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bicepsSpravaSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataNumberLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="grudSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ikraSlevaSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ikraSpravaSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rostSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shejaSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="talijaSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vesSmLabel" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Workout" representedClassName="Workout" syncable="YES" codeGenerationType="class">
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="employees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Employee" inverseName="workout" inverseEntity="Employee" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Employee" positionX="92.55859375" positionY="199.375" width="128" height="120"/>
+        <element name="Exercise" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Sample" positionX="143.6796875" positionY="-176.8046875" width="128" height="255"/>
+        <element name="Workout" positionX="310.23046875" positionY="88.90234375" width="128" height="88"/>
+    </elements>
+</model>
